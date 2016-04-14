@@ -1,0 +1,27 @@
+
+
+
+<div class="poster">
+  <img src="<%= movie[:poster] %>">
+</div>
+<div class="info">
+  <h1><%= movie[:title] %> (<%= movie[:year] %>)</h1>
+  <p><%= movie[:runtime] %>, rated <%= movie[:rated] %> </p>
+  <p>Written by: <%= movie[:writer] %> </p>
+  <p>Directed by: <%= movie[:director] %></p>
+  <p>Country: <%= movie[:country] %></p>
+  <p><%= movie[:genre] %></p>
+  <p>Starring: <%= movie[:actors] %></p>
+  <%= movie[:plot] %>
+  <div class="back">
+    <a href="/">Search again</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
