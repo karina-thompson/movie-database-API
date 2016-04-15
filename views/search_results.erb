@@ -1,0 +1,9 @@
+
+<div id ="searchresults">
+<ul>
+<% all_title_matches.each do |movie| %>
+<li><a href="/about?movie=<%= movie["Title"] %>"><%= "#{movie["Title"]} (#{movie["Year"]})"  %></a></li>
+<% end %>
+</ul>
+</div>
+

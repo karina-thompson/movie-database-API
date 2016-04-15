@@ -1,8 +1,8 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   width: 100%;
   margin: 0 auto;
-  background-color: #66A1CF;
+  background-color: #8BCEED;
 }
 
 header {
@@ -14,13 +14,14 @@ header {
 
 
 header h1 {
-  font-weight: 900;
+  font-weight: 700;
+  font-style: italic;
   line-height: 150px;
-  padding-left: 5%;
+  padding-left: 6%;
   z-index: 2;
   position: relative;
   width: 100%;
-  color: white;
+  color: #D9F2FC;
   font-size: 3em;
 }
 
@@ -50,7 +51,7 @@ button {
 
 
 #inputbox {
-  height: 25px;
+  height: 30px;
   width: 70%;
   font-size: 1em;
   border: 1px solid grey;
@@ -58,14 +59,21 @@ button {
   padding: 2px;
 }
 
+
 #display {
   background-color: white;
   width: 80%;
-  margin: 5% auto;
-  color: #10161A;
+  margin: 15px auto;
+  color: #0E1518;
   min-height: 400px;
   padding: 5%;
 }
+
+
+#index .info {
+  padding-top: 7%;
+}
+
 
 .poster {
   display: inline-block;
@@ -91,7 +99,15 @@ button {
   margin-top: 10%;
 }
 
+#searchresults li {
+  padding: 2px;
+  list-style-type: none;
+}
 
+
+span {
+  font-weight: bold;
+}
 
 
 

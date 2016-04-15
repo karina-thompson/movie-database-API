@@ -2,7 +2,7 @@ require 'active_record'
 
 options = {
   adapter: 'postgresql',
-  database: 'movies'
+  database: 'letsgotothemovies'
 }
 
 ActiveRecord::Base.establish_connection(options)
