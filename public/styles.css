@@ -36,6 +36,12 @@ header img {
   opacity: 0.9;
 }
 
+header a {
+  text-decoration: none;
+}
+
+
+
 
 
 button {
@@ -46,8 +52,15 @@ button {
   width: 70%;
   font-size: 1.5em;
   margin-top: 5%;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #0EB1EC;
+  color: #10161A;
+  border: 2px solid #10161A;
+}
 
 
 #inputbox {
@@ -73,7 +86,6 @@ button {
 #index .info {
   padding-top: 7%;
 }
-
 
 .poster {
   display: inline-block;
@@ -104,6 +116,9 @@ button {
   list-style-type: none;
 }
 
+#searchresults img {
+  max-width: 40px;
+}
 
 span {
   font-weight: bold;

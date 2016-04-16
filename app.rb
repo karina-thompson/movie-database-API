@@ -10,6 +10,15 @@ after do
   ActiveRecord::Base.connection.close
 end
 
+helpers do
+
+  def no_poster
+    "http://www.cineart.be/Documents/Document/Large/20120510153359-NoPosterAvailable.jpg"
+  end
+
+end
+
+
 
 get '/' do
   erb :index
@@ -23,7 +32,6 @@ get '/about' do
     movie = Movie.find_by(title: movie_input)
   else
     data = HTTParty.get("http://omdbapi.com/?t=#{ CGI::escape(movie_input) }")
-    puts data.inspect
     movie = Movie.create(title: data["Title"], rated: data["Rated"], genre: data["Genre"], writer: data["Writer"], director: data["Director"], year: data["Year"], runtime: data["Runtime"], actors: data["Actors"], poster_url: data["Poster"], plot: data["Plot"], country: data["Country"] )
   end
   
