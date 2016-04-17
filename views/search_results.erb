@@ -5,12 +5,7 @@
 <% all_title_matches.each do |movie| %>
 
 <li><a href="/about?movie=<%= movie["Title"] %>">
-<% if movie["Poster"] == "N/A" %>
-  <img src="<%= no_poster %>">
-<% else %>
-  <img src="<%= movie["Poster"] %>">
-<% end %>
-<%= "#{movie["Title"]} (#{movie["Year"]})"  %></a></li>
+  <img src="<%= poster(movie["Poster"]) %>"><%= "#{movie["Title"]} (#{movie["Year"]})"  %></a></li>
 <% end %>
 </ul>
 

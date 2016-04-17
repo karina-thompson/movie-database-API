@@ -12,12 +12,15 @@ end
 
 helpers do
 
-  def no_poster
-    "http://www.cineart.be/Documents/Document/Large/20120510153359-NoPosterAvailable.jpg"
+  def poster(movie_poster)
+    if movie_poster == "N/A"
+      "http://www.cineart.be/Documents/Document/Large/20120510153359-NoPosterAvailable.jpg"
+    else
+      movie_poster
+    end
   end
 
 end
-
 
 
 get '/' do
